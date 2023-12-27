@@ -4,6 +4,14 @@
     margin: 0;
 }
 
+.nav-logo span {
+    line-height: 60px;
+    font-size: 24px; /* 适当调整字体大小 */
+    font-family: 'Roboto', sans-serif;
+    font-weight: bold; /* 加粗字体 */
+    letter-spacing: 2px; /* 增加字母间距 */
+}
+
 ul li{
     list-style: none;
 }
@@ -108,7 +116,6 @@ nav li:hover::after{
     content: "";
     transition: all .6s;
 }
-
 
 
 /* 内容样式 */
