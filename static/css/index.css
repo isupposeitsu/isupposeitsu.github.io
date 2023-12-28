@@ -288,70 +288,85 @@ footer{
     font-size: 13px;
 }
 
-/* 基本样式 */
-
-/* ... 其他 CSS 规则 ... */
-
 /* 响应式设计 */
 @media only screen and (max-width: 768px) {
-    .container {
-        width: 100%; /* 将容器宽度设置为100%以适应屏幕 */
-        padding: 10px; /* 调整内边距 */
-    }
-
+    
     /* 导航样式 */
-    nav {
-        font-size: 14px; /* 调整导航字体大小 */
+    .nav-menu {
+        width: 100%; /* 将导航菜单宽度设置为100%以适应屏幕 */
+        text-align: right; /* 文字右对齐 */
     }
-
-    nav ul li {
-        margin: 5px; /* 调整导航条目的外边距 */
+    
+    #nav-list {
+        padding: 0;
+        list-style: none;
     }
-
-    nav ul li a {
+    
+    #nav-list li {
+        display: inline-block;
+        margin: 0 10px; /* 调整导航条目的外边距 */
+    }
+    
+    #nav-list li a {
+        text-decoration: none;
         font-size: 14px; /* 调整导航链接字体大小 */
-        padding: 4px 14px; /* 调整导航链接内边距 */
+        padding: 8px 14px; /* 调整导航链接内边距 */
+        border-bottom: 2px solid transparent; /* 添加底边框 */
     }
-
-    /* 第一部分 */
-    .part_1 .part_1_title {
-        width: 100%; /* 将标题宽度设置为100%以适应屏幕 */
-        margin-left: 0; /* 移除左边距 */
-        margin-right: 0; /* 移除右边距 */
-        top: 20%; /* 调整标题垂直位置 */
+    
+    #nav-list li.current a {
+        border-bottom-color: #000; /* 设置当前导航底边框的颜色 */
     }
+/* 第一部分 */
+.part_1 {
+    background-size: cover;
+    background-position: center;
+    height: 100vh; /* 将高度设置为整个视口高度 */
+    display: flex;
+    align-items: center; /* 垂直居中 */
+    text-align: center; /* 文字水平居中 */
+}
 
-    .part_1 .part_1_title .inner h2 {
-        font-size: 18px; /* 调整标题字体大小 */
-    }
+.part_1_title {
+    width: 100%; /* 将标题宽度设置为100%以适应屏幕 */
+    margin: 0; /* 移除标题的默认边距 */
+    top: 20%; /* 调整标题垂直位置 */
+}
 
-    .part_1 .part_1_title .title {
-        font-size: 16px; /* 调整标题底部文字字体大小 */
-    }
+.part_1_title .inner {
+    position: relative;
+}
 
-    .part_1 .guide {
-        padding: 5px 0; /* 调整指引的内边距 */
-    }
+.part_1_title h2 {
+    font-size: 18px; /* 调整标题字体大小 */
+}
 
-    .part_1 .guide a {
-        font-size: 16px; /* 调整指引链接字体大小 */
-    }
+.part_1_title .title {
+    font-size: 16px; /* 调整标题底部文字字体大小 */
+}
 
-    /* 第二部分 */
-    .brief_major {
-        font-size: 24px; /* 调整摘要标题字体大小 */
-    }
+.part_1 .guide {
+    padding: 5px 0; /* 调整指引的内边距 */
+}
 
-    .part_2 .brief_paragraph p {
-        font-size: 14px; /* 调整摘要段落字体大小 */
-        padding: 15px 0; /* 调整摘要段落内边距 */
-    }
+.part_1 .guide a {
+    font-size: 16px; /* 调整指引链接字体大小 */
+}
 
-    .part_2 .brief_url a {
-        font-size: 12px; /* 调整链接字体大小 */
-        padding: 8px 16px; /* 调整链接内边距 */
-    }
+/* 第二部分 */
+.part_2 .brief_major {
+    font-size: 20px; /* 调整标题的字体大小 */
+}
 
+.part_2 .brief_paragraph p {
+    font-size: 14px; /* 调整段落的字体大小 */
+    padding: 10px; /* 调整段落的内边距 */
+}
+
+.part_2 .brief_url a {
+    font-size: 12px; /* 调整链接的字体大小 */
+    padding: 8px 12px; /* 调整链接的内边距 */
+}
     /* 第三部分 */
     .list ul li {
         width: 48%; /* 调整列表项宽度 */
