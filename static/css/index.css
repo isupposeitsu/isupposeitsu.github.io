@@ -92,7 +92,7 @@ nav li::after{
     bottom: -10px;
     width: 0;
     height: 2px;
-    background-color: #6bc30d;
+    background-color: #c3100d;
     content: "";
     transition: all .6s;
 }
@@ -102,12 +102,12 @@ nav .current::after {
 }
 
 nav .current a {
-    color: #6bc30d;
+    color: #c3100d;
 }
 
 
 nav li:hover a{
-    color: #6bc30d;
+    color: #c3100d;
 }
 
 nav li:hover::after{
@@ -115,7 +115,7 @@ nav li:hover::after{
     bottom: -10px;
     width: 100%;
     height: 2px;
-    background-color: #6bc30d;
+    background-color: #c3100d;
     content: "";
     transition: all .6s;
 }
@@ -135,6 +135,7 @@ nav li:hover::after{
 /* 第一部分摘要 */
 .part_1 .part_1_title{
     width: 200px;
+    font-weight: bold;
     position: absolute;
     left:50%;
     top:35%;
@@ -150,6 +151,11 @@ nav li:hover::after{
     font-size: 24px;
     font-weight: 500;
     padding: 10px;
+    font-family: 'Roboto', sans-serif;
+    font-weight: bold; /* 加粗字体 */
+    letter-spacing: 1px; /* 增加字母间距 */
+    white-space: nowrap; /* 防止文本换行 */
+
 }
 
 .part_1 .part_1_title .inner:before{
@@ -204,10 +210,12 @@ nav li:hover::after{
 /* 第二部分 */
 .brief_major{
     font-size: 28px;
+    font-weight: bold;
     color: #405E79;
 }
 
 .brief_paragraph{
+    font-weight: bold;
     padding: 30px 0;
 }
 
@@ -233,7 +241,7 @@ nav li:hover::after{
     height: 38px;
     font-size: 14px;
     color: #fff;
-    background-color:mediumpurple;
+    background-color:#910d0b;
     border-radius: 10px;
     padding: 10px 20px;
 }
@@ -262,7 +270,7 @@ nav li:hover::after{
 /* 页脚 */
 footer{
     width: 100%;
-    background: url('../images/bg01.jpg');
+    background: url('../images/sp1o.png');
     background-size:cover;
     background-repeat: no-repeat;
     background-attachment:fixed;
