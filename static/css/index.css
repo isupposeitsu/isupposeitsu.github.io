@@ -47,47 +47,40 @@ li a:visited{
 }
 
 /* 导航样式 */
-nav{
+nav {
     position: fixed;
     width: 100%;
-    left:0;
+    left: 0;
     top: 0;
     min-height: 60px;
-    background-color: rgba(0,0,0,.6);
+    background-color: rgba(0, 0, 0, .6);
     font-size: 15px;
     font-weight: 400;
     color: #fff;
     z-index: 100;
 }
 
-nav ul li{
+nav ul li {
     float: left;
     display: block;
     margin: 10px 5px;
     position: relative;
 }
 
-nav ul li a{
+nav ul li a {
     color: #fff;
     display: block;
     font-size: 16px;
-    font-weight: 400;
+    font-weight: bold; /* 保持字体粗体 */
     line-height: 32px;
     padding: 4px 28px;
     font-family: 'Roboto', sans-serif;
-    font-weight: bold; /* 加粗字体 */
     letter-spacing: 1px; /* 增加字母间距 */
     cursor: pointer;
-} 
-
-.header-fixed{
-    width: 1190px;
-    margin-left: auto;
-    margin-right: auto;
 }
 
 /* 导航菜单的效果渲染 */
-nav li::after{
+nav li::after {
     position: absolute;
     bottom: -10px;
     width: 0;
@@ -103,14 +96,15 @@ nav .current::after {
 
 nav .current a {
     color: #c3100d;
+    font-weight: bold; /* 保持字体粗体 */
 }
 
-
-nav li:hover a{
+nav li:hover a {
     color: #c3100d;
+    font-weight: bold; /* 保持字体粗体 */
 }
 
-nav li:hover::after{
+nav li:hover::after {
     position: absolute;
     bottom: -10px;
     width: 100%;
@@ -144,7 +138,7 @@ nav li:hover::after{
 }
 
 .part_1 .part_1_title .inner{
-    margin-bottom: 20px;
+    margin-bottom: 30px;
 }
 
 .part_1 .part_1_title .inner h2{
@@ -157,7 +151,7 @@ nav li:hover::after{
     white-space: nowrap; /* 防止文本换行 */
 
 }
-
+/* 
 .part_1 .part_1_title .inner:before{
     display: block;
     height: 2px;
@@ -174,7 +168,10 @@ nav li:hover::after{
     content: '';
     position: absolute;
     background-color: #fff;
-}
+    top: 12px;
+} 
+*/
+
 
 .part_1 .part_1_title .title{
     font-size: 20px;
@@ -285,7 +282,19 @@ footer{
 
 .copyright{
     color: #fff;
-    font-size: 13px;
+    font-size: 16px;
+    text-align: center; /* 居中文本 */
+    margin-top: 12px; /* 根据需要调整顶部边距 */
+}
+
+.addon{
+    letter-spacing: 0.03em;
+    font-family: 'Josefin Sans', sans-serif;
+    font-size: 16px;
+    line-height: 30px;
+    -webkit-font-smoothing: antialiased;
+    color: #ffffff;
+    text-align: center;
 }
 
 /* 响应式设计 */
@@ -382,4 +391,73 @@ footer{
     .copyright {
         font-size: 12px; /* 调整版权信息字体大小 */
     }
+    .hidden-text {
+        display: none;
+    }
+    
 }
+
+.csw-theme-orange, .csw-theme-purple {
+    background: linear-gradient(140deg,var(--start-color),var(--end-color));
+}
+
+.csw-theme-orange {
+    --start-color: #ff4d4d;
+    --end-color: #f9cb28;
+}
+
+.csw-theme-green, .csw-theme-orange, .csw-theme-purple {
+    border-style: none;
+    padding: 2px;
+    --tw-text-opacity: 1;
+    color: rgb(255 255 255/var(--tw-text-opacity));
+}
+
+.custom-substack-widget {
+    border: 2px solid var(--csw-primary-color);
+    display: inline-flex;
+    height: auto;
+    width: 100%;
+    max-width: 384px;
+    flex-direction: row;
+    flex-wrap: wrap;
+    overflow: hidden;
+    border-radius: 4px;
+    border-width: 2px;
+    padding: 0;
+    font-size: 16px;
+    line-height: 24px;
+}
+
+.custom-substack-widget, .custom-substack-widget+* {
+    font-family: system-ui,-apple-system,Segoe UI,Roboto,Helvetica,Arial,sans-serif,Apple Color Emoji,Segoe UI Emoji;
+}
+ul, ol, li, h1, h2, h3, h4, h5, h6, pre, form, body, html, p, blockquote, fieldset, input {
+    margin: 0;
+    padding: 0;
+}
+ul, ol, li, h1, h2, h3, h4, h5, h6, pre, form, body, html, div.paragraph, blockquote, fieldset, input {
+    margin: 0;
+    padding: 0;
+}
+用户代理样式表
+form {
+    display: block;
+    margin-top: 0em;
+}
+.footer-wrap {
+    color: #ffffff;
+}
+body {
+    width: 100%;
+    height: 100%;
+    background-color: #ffe6ea;
+    color: #444444;
+    letter-spacing: 0.03em;
+    font-family: 'Josefin Sans', sans-serif;
+    font-size: 16px;
+    line-height: 30px;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
