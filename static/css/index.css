@@ -229,6 +229,18 @@ nav li:hover::after {
 .brief_paragraph .colored {
     color: #000000; /* 设置不同颜色，可以根据需要调整 */
 }
+
+.brief_paragraph .lyric {
+    color: #000000;
+    text-align: center; /* 居中对齐 */
+    font-size: 24px; /* 文字变大，可以根据需要调整字体大小 */
+    font-family: "Microsoft YaHei", sans-serif; /* 更好看的字体，可以根据需要调整字体样式 */
+    font-style: italic; /* 斜体效果，增加艺术感 */
+    display: flex; /* 设置弹性盒子 */
+    justify-content: center; /* 沿水平方向居中 */
+    align-items: center; /* 沿垂直方向居中 */
+}
+
 .part_2 .brief_url{
     padding: 30px 0;
 }
